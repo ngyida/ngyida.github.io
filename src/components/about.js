@@ -14,6 +14,13 @@ function about() {
             My interests include Software Engineering, Computer Networks, and Machine Learning.
           </p>
         </div>
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <img
+            className="object-cover object-center rounded"
+            alt="hero"
+            src="./testPic.avif"
+          />
+        </div>
       </div>
     </section>
   );
