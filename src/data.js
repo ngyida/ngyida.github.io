@@ -20,4 +20,17 @@ export const projects_data = [
       image: "./testPic.avif",
     //   link: "https://",
     },
-  ];
+];
+
+export const contact_data = [
+    {
+        method: "Email",
+        value: "mailto:ngyida@u.nus.edu",
+        icon: "./testPic.avif",
+    },
+    {
+        method: "LinkedIn",
+        value: "www.linkedin.com/in/ngyida",
+        icon: "./testPic.avif",
+    }
+];
