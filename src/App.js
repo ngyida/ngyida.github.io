@@ -1,7 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap'
 import './App.css'
-import 'bootstrap'
 import React from "react";
 import About from "./components/about";
 import Contact from "./components/contact";
@@ -12,13 +9,13 @@ import Work from "./components/work";
 
 function App() {
   return (
-    <div className="custom-bg-color">
+    <main className="text-gray-400 bg-gray-900 body-font">
       <Navbar/>
       <About/>
       <Work/>
       <Projects/>
       <Contact/>
-    </div>
+    </main>
   );
 }
 
