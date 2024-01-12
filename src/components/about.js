@@ -18,7 +18,7 @@ function about() {
           </p>
 
           <p className="mb-8 text-xl text-white leading-relaxed font">
-            In my free time, I like to workout, play video games and build apps spontaneously.
+            In my free time, I like to workout, play video games and build apps.
           </p>
         </div>
         {/* <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 h-1/3"> */}
@@ -26,7 +26,7 @@ function about() {
           <img
             className="object-cover object-center rounded aspect-square"
             alt="hero"
-            src="./testPic.avif"
+            src="./portrait.png"
           />
         </div>
       </div>
