@@ -122,7 +122,7 @@ export const extra_work_data = [
     startDate: "Jun 2016",
     endDate: "Mar 2017",
     descriptions: [
-      "Led a project titled “Design and Development of a Nature-inspired Aerial Craft” in collaboration with SUTD Professor",
+      "Led a project titled “Design and Development of a Nature-inspired Aerial Craft” in collaboration with SUTD Professor research team at https://people.sutd.edu.sg/~shao/research/nature-inspired-aerial-crafts/",
       "Designed a comprehensive experiment that analyzes auto-rotational performance of wings through specialized programming",
       "Engineered a wind-tunnel for experimental use by SUTD PhD students",
       "Project shortlisted as finalist in the 2017 Singapore Science and Engineering Fair"
