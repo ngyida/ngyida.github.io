@@ -47,15 +47,16 @@ export const contact_data = [
   },
 ];
 
-export const work_data = [
+export const main_work_data = [
   {
       title: "Software Developer",
-      company: "Orbital",
+      company: "NUS Computing",
       startDate: "Dec 2023",
       endDate: "Current",
       descriptions: [
-        "Engineered features including user matching and messaging service for web platform using PostgreSQL, Express, React, Nodejs technology stack",
-        "Designed and streamlined multiple user workflows to automate user processes and improve user experience"
+        "Freelance developer for NUS Orbital’s web application (Skylab), open-source at https://github.com/orbital-skylab",
+        "Engineered APIs to support new features, scale database design, and implement webpage frontend",
+        "Spearheaded the new user matching project; redesign workflow and automate process",
       ]
   },
   {
@@ -80,5 +81,51 @@ export const work_data = [
         "Engineered programming language bindings for compiler to support Python interface while retaining C++ performance and security standard to enable testing by partnering companies",
         "Initiated experimentation with machine learning models using homomorphic encrypted data to determine feasibility of integration into compiler",
       ]
+  },
+]
+
+export const extra_work_data = [
+  {
+      title: "Customer Experience Data Officer",
+      company: "Ministry of Manpower (MOM)",
+      startDate: "Jan 2021",
+      endDate: "Jun 2021",
+      descriptions: [
+        "Member of the team overseeing Singapore's Business Census Registry",
+        "Extracted and analyzed data from various establishment to ensure accuracy and validity of data"
+      ]
+  },
+  {
+    title: "Data Analyst",
+    company: "Singapore Exchange (SGX)",
+    startDate: "Nov 2020",
+    endDate: "Dec 2020",
+    descriptions: [
+      "Performed data analysis on dividends of several stocks",
+      "Reviewed private securities applications and handled investors’ queries"
+    ]
+  },
+  {
+    title: "Researcher",
+    company: "Defence Science and Technology Agency (DSTA)",
+    startDate: "Jun 2017",
+    endDate: "April 2018",
+    descriptions: [
+      "Spearheaded a project titled “Investigation of Traditional and Unconventional Power Sources for Optical Sensing CubeSat”",
+      "Collaborated with DSTA Researchers in the assembly of a CubesSat missioned for the cleanup of space debris",
+      "Presented project at Young Defence Scientists Programme (YDSP) Congress 2018"
+    ]
+  },
+  {
+    title: "Researcher",
+    company: "Singapore University of Technology and Design (SUTD)",
+    startDate: "Jun 2016",
+    endDate: "Mar 2017",
+    descriptions: [
+      "Led a project titled “Design and Development of a Nature-inspired Aerial Craft” in collaboration with SUTD Professor",
+      "Designed a comprehensive experiment that analyzes auto-rotational performance of wings through specialized programming",
+      "Engineered a wind-tunnel for experimental use by SUTD PhD students",
+      "Project shortlisted as finalist in the 2017 Singapore Science and Engineering Fair"
+    ]
   },
 ]
