@@ -54,7 +54,7 @@ export const main_work_data = [
       startDate: "Dec 2023",
       endDate: "Current",
       descriptions: [
-        "Freelance developer for NUS Orbital’s web application (Skylab), open-source at https://github.com/orbital-skylab",
+        "Freelance developer for the Orbital’s platform (Skylab), open-source at https://github.com/orbital-skylab",
         "Engineered APIs to support new features, scale database design, and implement webpage frontend",
         "Spearheaded the new user matching project; redesign workflow and automate process",
       ]
