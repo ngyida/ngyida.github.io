@@ -73,7 +73,7 @@ export const main_work_data = [
   },
   {
       title: "Software Research Intern",
-      company: "Agency for Science, Technology and Research",
+      company: "Institute for Infocomm Research (I2R) - Agency for Science, Technology and Research (A*STAR)",
       startDate: "May 2022",
       endDate: "Jul 2022",
       descriptions: [
