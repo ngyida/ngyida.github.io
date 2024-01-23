@@ -14,14 +14,13 @@ function about() {
           <p className="mb-8 text-xl text-white leading-relaxed font">
             I am a penultimate undergraduate pursuing a Bachelor's Degree in Computer Science at the National University of Singapore.           
             <br/>
-            My interests include Software Engineering, Computer Networks, and Machine Learning.
+            My interests include Software Engineering, Computer Security, Computer Networks, and Distributed System.
           </p>
 
           <p className="mb-8 text-xl text-white leading-relaxed font">
-            In my free time, I like to workout, play video games and build apps.
+            In my free time, I like to workout and play video games.
           </p>
         </div>
-        {/* <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 h-1/3"> */}
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
           <img
             className="object-cover object-center rounded aspect-square"
