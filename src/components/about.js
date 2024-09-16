@@ -9,10 +9,10 @@ function about() {
             Hello, I'm Yi Da.
           </h1>
           <p className="mb-8 leading-relaxed">
-            Computer Science Major, Software Engineer
+            Backend Engineer
           </p>
           <p className="mb-8 text-xl text-white leading-relaxed font">
-            I am a penultimate undergraduate pursuing a Bachelor's Degree in Computer Science at the National University of Singapore.           
+            I am a final-year undergraduate pursuing a Bachelor's Degree in Computer Science at the National University of Singapore.           
             <br/>
             My interests include Software Engineering, Computer Security, Computer Networks, and Distributed System.
           </p>
