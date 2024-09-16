@@ -12,13 +12,15 @@ function about() {
             Backend Engineer
           </p>
           <p className="mb-8 text-xl text-white leading-relaxed font">
-            I am a final-year undergraduate pursuing a Bachelor's Degree in Computer Science at the National University of Singapore.           
-            <br/>
-            My interests include Software Engineering, Computer Security, Computer Networks, and Distributed System.
+            I am a final-year Computer Science undergraduate at the National University of Singapore, specializing in Software Engineering.        
           </p>
 
           <p className="mb-8 text-xl text-white leading-relaxed font">
-            In my free time, I like to workout and play video games.
+            My expertise focuses on backend systems and security software, where I am passionate about designing robust, scalable, and secure solutions to tackle complex challenges.
+          </p>
+
+          <p className="mb-8 text-xl text-white leading-relaxed font">
+            Outside of work, I enjoy staying active through workouts and exploring the world of video games. I’m always open to connecting for collaboration on exciting projects!
           </p>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ">
