@@ -1,5 +1,12 @@
 export const projects_data = [
   {
+    title: "Detecting & Explaining Anomalies Caused by Web Tamper Attacks",
+    subtitle: "GovTech",
+    description: "Final Year Project on Web Anomaly Detection. In collaboration with GovTech's TAICeN team",
+    image: "./govtech.png",
+    link: "https://github.com/JasonBourne1998/TamperLogPrompt",
+  },
+  {
     title: "My Shop",
     subtitle: "Stripe | React | Node",
     description: "An E-commerce Shop",
@@ -7,26 +14,26 @@ export const projects_data = [
     link: "https://github.com/ngyida/MyShop",
   },  
   {
-      title: "Sensitive Chat App",
-      subtitle: "TensorFlow | IBM Cloud | React | Node.js",
-      description: "A messaging web application with emotional recognition and sentiment analysis capability",
-      image: "./sensitiveChatApp.avif",
-      link: "https://github.com/ngyida/SensitiveChatApp.git",
-    },
-    {
-      title: "Nakamoto Bitcoin",
-      subtitle: "Rust | Distributed System",
-      description: "A CLI application with simplified Nakamoto Bitcoin network",
-      image: "./bitcoin.jpg",
-      link: "https://github.com/ngyida/bitcoin-rust",
-    },
-    {
-      title: "Meal Companion",
-      subtitle: "Java | JUnit | Gradle | Github Actions",
-      description: "An application for students to track refrigerator items and simplify the meal prepping process in hostel",
-      image: "./mealCompanion.png",
-      link: "https://github.com/AY2223S2-CS2113T-T09-3/tp",
-    },
+    title: "Sensitive Chat App",
+    subtitle: "TensorFlow | IBM Cloud | React | Node.js",
+    description: "A messaging web application with emotional recognition and sentiment analysis capability",
+    image: "./sensitiveChatApp.avif",
+    link: "https://github.com/ngyida/SensitiveChatApp.git",
+  },
+  {
+    title: "Nakamoto Bitcoin",
+    subtitle: "Rust | Distributed System",
+    description: "A CLI application with simplified Nakamoto Bitcoin network",
+    image: "./bitcoin.jpg",
+    link: "https://github.com/ngyida/bitcoin-rust",
+  },
+  {
+    title: "Meal Companion",
+    subtitle: "Java | JUnit | Gradle | Github Actions",
+    description: "An application for students to track refrigerator items and simplify the meal prepping process in hostel",
+    image: "./mealCompanion.png",
+    link: "https://github.com/AY2223S2-CS2113T-T09-3/tp",
+  },
 ];
 
 export const contact_data = [
