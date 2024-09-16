@@ -49,19 +49,44 @@ export const contact_data = [
 
 export const main_work_data = [
   {
+    title: "Software Engineer",
+    company: "ByteDance/TikTok",
+    startDate: "Aug 2024",
+    endDate: "Current",
+    descriptions: [
+      "Designed & develop a fully managed code-signing cloud service powered by ByteDance’s Distributed Key Management System (DKMS), targeting android & harmonyOS applications",
+      "Developed a Cloud Identity & Access Management (CIDaaS) POC, with a focus on authentication",
+      "Conduct market research on IAM services & worked closely with early customers to set Minimum Viable Product requirements to pioneer a CIDaaS product",
+      "Skills: Golang | Distributed Key Management System | Code Signing | IAM"
+    ]
+  },
+  {
+    title: "Backend Engineer",
+    company: "Binance",
+    startDate: "Apr 2024",
+    endDate: "Aug 2024",
+    descriptions: [
+      "Built a root cause analysis system using application monitoring tools to analyze impacted areas caused by anomalies detected across more than 50 microservices in the company, significantly reducing the Mean Time to Repair (MTTR) for incident managers by over 40%",
+      "Developed a real-time knowledge base that uses ETL and RAG technology to extend the knowledge of LLM models, supporting time-sensitive Web3 domain data & internal workflow",
+      "Developed an alarm aggregation technique using a real-time stock ticker within the monitoring system to minimize unnecessary alerts, enhancing overall system efficiency & accuracy",
+      "Overhauled the feedback mechanism, enabling incident managers to provide valuable feedback on alerts to train the AI model used by the anomaly detection engine",
+      "Skills: Java | Spring Boot | MySQL | AIOps | Application Monitoring Tools | Web3"
+    ]
+  },
+  {
       title: "Software Developer",
       company: "NUS Computing",
-      startDate: "Dec 2023",
-      endDate: "Current",
+      startDate: "Jan 2024",
+      endDate: "Mar 2024",
       descriptions: [
-        "Freelance developer for the Orbital’s platform (Skylab), open-source at https://github.com/orbital-skylab",
+        "Freelance developer for the Skylab V2, open-source at https://github.com/orbital-skylab",
         "Engineered APIs to support new features, scale database design, and implement webpage frontend",
         "Spearheaded the new user matching project; redesign workflow and automate process",
         "Skills: TypeScript | React.js | PostgreSQL | Prisma | Express.js"
       ]
   },
   {
-      title: "Software Engineer Intern",
+      title: "Software Engineer",
       company: "Ryde",
       startDate: "May 2023",
       endDate: "Oct 2023",
@@ -74,7 +99,7 @@ export const main_work_data = [
       ]
   },
   {
-      title: "Software Research Intern",
+      title: "Software Researcher",
       company: "Institute for Infocomm Research (I2R) - Agency for Science, Technology and Research (A*STAR)",
       startDate: "May 2022",
       endDate: "Jul 2022",
