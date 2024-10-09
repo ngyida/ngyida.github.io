@@ -11,7 +11,6 @@ function Work() {
     setViewMore(!viewMore);
   };
 
-  // Combine main and extra work data based on viewMore state
   const allWorkData = viewMore
     ? [...main_work_data, ...extra_work_data]
     : main_work_data;
@@ -26,14 +25,11 @@ function Work() {
           </h1>
         </div>
         <div className="relative">
-          {/* Timeline Vertical Line */}
           <div className="hidden md:block absolute w-1 bg-gray-700 h-full left-8"></div>
           <div className="space-y-12">
             {allWorkData.map((workObj, index) => (
               <div key={index} className="relative md:flex md:items-center group">
-                {/* Timeline Indicator */}
                 <div className="hidden md:block absolute left-8 transform -translate-x-1/2 bg-blue-500 rounded-full h-4 w-4"></div>
-                {/* Work Item */}
                 <div className="md:ml-16 md:w-full">
                   <WorkItem workObj={workObj} />
                 </div>

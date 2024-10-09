@@ -79,7 +79,6 @@ function WorkItem({ workObj }) {
           ))}
         </div>
       )}
-      {/* Expandable Content */}
       {isExpanded && (
         <div className="mt-2">
           <ul className="list-disc pl-5 text-gray-300 space-y-1">
@@ -89,7 +88,6 @@ function WorkItem({ workObj }) {
           </ul>
         </div>
       )}
-      {/* Expand/Collapse Indicator */}
       <div className="flex justify-end mt-2">
         <button
           className="text-blue-500 hover:underline focus:outline-none"

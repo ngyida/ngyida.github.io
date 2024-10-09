@@ -52,7 +52,6 @@ function TestimonialCard({ testimonial }) {
           {shortQuote}
           <span className="text-2xl">”</span>
         </p>
-        {/* Expandable Full Text */}
         {isExpanded && (
           <div className="mt-4">
             <div className="text-gray-300 whitespace-pre-wrap overflow-y-auto max-h-64 pr-2">

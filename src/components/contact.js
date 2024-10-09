@@ -14,9 +14,7 @@ function Contact() {
         <p className="text-center leading-relaxed mb-8">
           Feel free to reach out for collaborations or just a friendly hello 😊
         </p>
-        {/* Contact Methods */}
         <div className="w-full max-w-md flex flex-col items-center">
-          {/* Render other contact methods from contact_data */}
           {contact_data.map((contact, index) => (
             <div key={index} className="flex items-center mb-6">
               <img
