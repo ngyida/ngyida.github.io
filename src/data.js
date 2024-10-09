@@ -38,20 +38,23 @@ export const projects_data = [
 
 export const contact_data = [
     {
-        method: "Email",
-        value: "ngyida@u.nus.edu",
-        icon: "./email.png",
+      method: "Email",
+      value: "mailto:ngyida@u.nus.edu",
+      displayValue: "ngyida@u.nus.edu",
+      icon: "./email.png"
     },
     {
-        method: "LinkedIn",
-        value: "https://www.linkedin.com/in/ngyida",
-        icon: "./linkedin.png",
+      method: "LinkedIn",
+      value: "https://www.linkedin.com/in/ngyida",
+      displayValue: "https://www.linkedin.com/in/ngyida",
+      icon: "./linkedin.png",
     },
-    {
-      method: "Github",
-      value: "https://github.com/ngyida",
-      icon: "./github.png",
-  },
+    // {
+    //   method: "GitHub",
+    //   value: "https://github.com/ngyida",
+    //   displayValue: "github.com/ngyida",
+    //   icon: "./email.png",
+    // },
 ];
 
 export const main_work_data = [
