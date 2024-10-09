@@ -65,7 +65,7 @@ export const main_work_data = [
     companyLink: "https://www.bytedance.com/en/",
     startDate: "Aug 2024",
     endDate: "Current",
-    summary: "IAM service & Code-Signing service (backend) under the Security Engineering team",
+    summary: "IAM service & Code-Signing service (Backend) under the Security Engineering team",
     skills: ["Golang", "MySQL", "AWS Cloud"],
     descriptions: [
       "Designed & develop a fully managed code-signing cloud service powered by ByteDance’s Distributed Key Management System (DKMS), targeting android & harmonyOS applications",
@@ -80,7 +80,7 @@ export const main_work_data = [
     companyLink: "https://www.binance.com/en",
     startDate: "Apr 2024",
     endDate: "Aug 2024",
-    summary: "Intelligent Anomaly Detection system (backend) under the TechOps team",
+    summary: "Intelligent Anomaly Detection system (Backend) under the TechOps team",
     skills: ["Java", "Spring Boot", "MySQL", "Prometheus", "Kafka", "Redis", "LLM", "Web3"],
     descriptions: [
       "Built a root cause analysis system using application monitoring tools to analyze impacted areas caused by anomalies detected across more than 50 microservices in the company, significantly reducing the Mean Time to Repair (MTTR) for incident managers by over 40%",
@@ -96,7 +96,7 @@ export const main_work_data = [
       companyLink: "https://nusskylab-dev.comp.nus.edu.sg/",
       startDate: "Jan 2024",
       endDate: "Mar 2024",
-      summary: "Skylab Version 2 (fullstack) under the Orbital team",
+      summary: "Skylab Version 2 (Fullstack) under the Orbital team",
       skills: ["Typescript", "NodeJS", "Express", "React", "PostgreSQL", "Prisma"],
       descriptions: [
         "Freelance developer for the Skylab V2, open-source at https://github.com/orbital-skylab",
@@ -111,7 +111,7 @@ export const main_work_data = [
       companyLink: "https://rydesharing.com/",
       startDate: "May 2023",
       endDate: "Oct 2023",
-      summary: "Central Internal Tools (fullstack) under the Technology team",
+      summary: "Central Internal Tools (Fullstack) under the Technology team",
       skills: ["Javascript", "NodeJS", "Express", "React", "MongoDB", "Firebase", "Google Cloud"],
       descriptions: [
         "Spearheaded a data-access system project utilized daily by multiple departments, improving daily KPI of customer service team by over 60% and reducing inconsistent data across departments",
@@ -209,7 +209,7 @@ Binance
 
 To Whom It May Concern,
 
-I am pleased to write this reference letter for Yi Da, who worked as a Backend Engineer intern from April 2025 to September 2025. During his time with us, Yi Da played a pivotal role in supporting critical tasks for a machine learning-driven anomaly detection project. His contributions significantly enhanced both the technical and AI capabilities of our team.
+I am pleased to write this reference letter for Yi Da, who worked as a Backend Engineer intern from April 2024 to September 2024. During his time with us, Yi Da played a pivotal role in supporting critical tasks for a machine learning-driven anomaly detection project. His contributions significantly enhanced both the technical and AI capabilities of our team.
 
 Although he was not directly under my supervision, Yi Da consistently demonstrated strong technical skills, a deep understanding of backend systems, and a passion for software engineering. Throughout his internship, he worked on implementing and optimizing several key features that helped the team achieve its Objectives & Key Results (OKRs). His enthusiasm for problem-solving was evident, and he worked efficiently to ensure the successful integration of his ideas into the backend infrastructure.
 
