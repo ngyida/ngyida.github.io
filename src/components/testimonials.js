@@ -1,12 +1,14 @@
 // Testimonials.js
 import React, { useState } from "react";
 import { testimonials_data } from "../data";
+import { ChatAlt2Icon } from "@heroicons/react/solid";
 
 function Testimonials() {
   return (
     <section id="testimonials" className="text-gray-400 bg-gray-900 body-font">
       <div className="container px-5 py-10 mx-auto">
         <div className="text-center mb-12">
+          <ChatAlt2Icon className="mx-auto inline-block w-10 mt-10" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font text-white">
             Testimonials
           </h1>
