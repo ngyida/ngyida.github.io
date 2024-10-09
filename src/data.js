@@ -194,3 +194,34 @@ export const extra_work_data = [
     ]
   },
 ]
+
+export const testimonials_data = [
+  {
+    author: "Ryo TC, YU",
+    position: "Incident Manager/ System Business Owner",
+    company: "Binance",
+    shortQuote: "An effective team player with strong technical skills.",
+    fullText: `
+Ryo TC, YU
+Incident Manager/ System Business Owner
+Binance
+27, September 2024
+
+To Whom It May Concern,
+
+I am pleased to write this reference letter for Yi Da, who worked as a Backend Engineer intern from April 2025 to September 2025. During his time with us, Yi Da played a pivotal role in supporting critical tasks for a machine learning-driven anomaly detection project. His contributions significantly enhanced both the technical and AI capabilities of our team.
+
+Although he was not directly under my supervision, Yi Da consistently demonstrated strong technical skills, a deep understanding of backend systems, and a passion for software engineering. Throughout his internship, he worked on implementing and optimizing several key features that helped the team achieve its Objectives & Key Results (OKRs). His enthusiasm for problem-solving was evident, and he worked efficiently to ensure the successful integration of his ideas into the backend infrastructure.
+
+Yi Da also showcased an excellent ability to analyze requirements, accurately translating complex project needs into scalable backend architectures. He took ownership of critical tasks and actively contributed valuable insights during discussions. In one of the projects, he regularly communicated with multiple stakeholders and coordinated the development of a shared LLM knowledge base. His strong understanding of infrastructure and tools enabled him to successfully lead this project.
+
+In summary, I highly recommend Yi Da for any future roles he pursues. His expertise in backend engineering, coupled with his effective communication and teamwork skills, makes him an exceptional candidate for positions involving complex, distributed technologies. Please feel free to contact me via email if you require any further information.
+
+Sincerely,
+Ryo TC, YU
+ryo.y@binance.com / ryoytcpp@gmail.com
+`,
+  },
+  // Add more testimonials as needed
+];
+
