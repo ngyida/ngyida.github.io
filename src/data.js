@@ -222,6 +222,35 @@ Ryo TC, YU
 ryo.y@binance.com / ryoytcpp@gmail.com
 `,
   },
-  // Add more testimonials as needed
+  {
+    author: "Tony Wang",
+    position: "Backend Software Engineer",
+    company: "Binance",
+    shortQuote: "Exceptional engineer, valuable team member",
+    fullText: `
+Tony Wang
+Backend Engineer
+Binance
+6 Nov 2024
+
+Dear Hiring Manager,
+
+I am writing to recommend Yi Da for the position of Software Engineer. Over the five months that Yi Da interned at Binance, I had the pleasure of mentoring him while he worked as a Backend Engineer intern on our team.
+
+From early on, Yi Da demonstrated strong backend problem-solving abilities and a genuine sense of project ownership. He consistently delivered production-quality features within established timelines, contributing to our team's success in meeting key objectives over two consecutive quarters. He is an eager learner who actively seeks opportunities to acquire new knowledge and apply it in his work. His performance met our expectations, showing a solid understanding of backend systems and a commitment to quality.
+
+One notable aspect of Yi Da's work was his ability to communicate complex technical concepts clearly and effectively. This skill was valuable during cross-team collaborations, where his insights helped facilitate smoother integrations and improved project efficiency. His positive attitude and willingness to support team members contributed to a collaborative work environment.
+
+In addition to his technical skills, Yi Da's proactive approach and dedication were appreciated by our team. He took on challenging tasks and looked for ways to improve our systems and processes. His contributions had a positive impact on our projects, and he was a valued member of the team.
+
+I believe that Yi Da would be a valuable addition to your organization. His combination of technical abilities, problem-solving skills, and interpersonal qualities make him well-suited for a role as a Software Engineer.
+
+Please feel free to contact me at tony.w@binance.com if you require any further information. I recommend Yi Da for your consideration.
+
+Sincerely,
+Tony Wang
+tony.w@binance.com
+`
+}
 ];
 
