@@ -1,0 +1,67 @@
+---
+import { getNavItems } from "../lib/content";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const navItems = await getNavItems();
+const pathname = Astro.url.pathname;
+const pageTitle = title === "About" ? "Yi Da" : `${title} | Yi Da`;
+
+const isActive = (href: string) => {
+  if (href === "/") {
+    return pathname === "/";
+  }
+
+  return pathname === href || pathname.startsWith(href);
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{pageTitle}</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <div class="site-frame">
+      <header class="masthead">
+        <a class="brand" href="/">Yi Da</a>
+        <nav class="site-nav" aria-label="Primary">
+          {
+            navItems.map((item, index) => (
+              <>
+                {index > 0 && <span class="nav-separator">/</span>}
+                <a
+                  href={item.href}
+                  aria-current={isActive(item.href) ? "page" : undefined}
+                  class={isActive(item.href) ? "active" : undefined}
+                >
+                  {item.label}
+                </a>
+              </>
+            ))
+          }
+        </nav>
+      </header>
+
+      <hr />
+
+      <main class="site-main">
+        <slot />
+      </main>
+
+      <footer class="site-footer">
+        <hr />
+        <p>Quietly built with Astro and MDX.</p>
+      </footer>
+    </div>
+  </body>
+</html>

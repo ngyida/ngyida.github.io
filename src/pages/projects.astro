@@ -1,0 +1,52 @@
+---
+import { render } from "astro:content";
+import ProsePageLayout from "../layouts/ProsePageLayout.astro";
+import {
+  buildProjectLinks,
+  buildProjectMeta,
+  getPageEntry,
+  getProjectEntries,
+  toCollectionHref,
+  toEntrySlug,
+} from "../lib/content";
+
+const page = await getPageEntry("projects");
+const entries = await getProjectEntries();
+const { Content } = await render(page);
+---
+
+<ProsePageLayout
+  title={page.data.title}
+  description={page.data.description}
+  intro={page.data.intro}
+>
+  <Content />
+
+  <hr />
+  <h2>projects</h2>
+
+  <ol class="entry-list">
+    {
+      entries.map((entry) => (
+        <li>
+          <h3 class="entry-list-title">
+            <a href={toCollectionHref("projects", toEntrySlug(entry))}>{entry.data.title}</a>
+          </h3>
+          <p class="entry-list-meta">{buildProjectMeta(entry)}</p>
+          <p class="entry-list-summary">{entry.data.listBlurb}</p>
+          {
+            buildProjectLinks(entry).length > 0 && (
+              <div class="inline-links">
+                {buildProjectLinks(entry).map((link) => (
+                  <a href={link.url} target="_blank" rel="noreferrer">
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+            )
+          }
+        </li>
+      ))
+    }
+  </ol>
+</ProsePageLayout>

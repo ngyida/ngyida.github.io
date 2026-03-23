@@ -1,0 +1,16 @@
+---
+import { render } from "astro:content";
+import ProsePageLayout from "../layouts/ProsePageLayout.astro";
+import { getPageEntry } from "../lib/content";
+
+const page = await getPageEntry("contact");
+const { Content } = await render(page);
+---
+
+<ProsePageLayout
+  title={page.data.title}
+  description={page.data.description}
+  intro={page.data.intro}
+>
+  <Content />
+</ProsePageLayout>

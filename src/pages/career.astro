@@ -1,0 +1,40 @@
+---
+import { render } from "astro:content";
+import ProsePageLayout from "../layouts/ProsePageLayout.astro";
+import {
+  buildCareerMeta,
+  getCareerEntries,
+  getPageEntry,
+  toCollectionHref,
+  toEntrySlug,
+} from "../lib/content";
+
+const page = await getPageEntry("career");
+const entries = await getCareerEntries();
+const { Content } = await render(page);
+---
+
+<ProsePageLayout
+  title={page.data.title}
+  description={page.data.description}
+  intro={page.data.intro}
+>
+  <Content />
+
+  <hr />
+  <h2>endeavors</h2>
+
+  <ol class="entry-list">
+    {
+      entries.map((entry) => (
+        <li>
+          <h3 class="entry-list-title">
+            <a href={toCollectionHref("career", toEntrySlug(entry))}>{entry.data.title}</a>
+          </h3>
+          <p class="entry-list-meta">{buildCareerMeta(entry)}</p>
+          <p class="entry-list-summary">{entry.data.listBlurb}</p>
+        </li>
+      ))
+    }
+  </ol>
+</ProsePageLayout>

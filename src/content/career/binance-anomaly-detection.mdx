@@ -1,0 +1,41 @@
+---
+title: "Backend Engineering for Anomaly Detection at Binance"
+summary: "Built backend features and operational tooling around anomaly detection, root-cause analysis, and real-time knowledge workflows."
+listBlurb: "Operational tooling for anomaly response, alert quality, and knowledge retrieval."
+period: "Apr 2024 - Aug 2024"
+organization: "Binance"
+location: "Singapore"
+sortOrder: 2
+tags:
+  - Java
+  - Spring Boot
+  - Kafka
+  - Redis
+  - LLM
+links:
+  - label: "company"
+    url: "https://www.binance.com/en"
+---
+
+## context
+
+The team was working on machine-learning-driven anomaly detection in a large operational environment. That meant technical decisions were closely tied to incident response, alert quality, and the speed at which people could make sense of noisy systems.
+
+## what I built
+
+I contributed to several parts of the backend platform:
+
+- a root-cause analysis flow that used monitoring data to help incident managers narrow down impacted areas
+- a real-time knowledge base pipeline to support time-sensitive internal and Web3 context for LLM-assisted workflows
+- an alert aggregation mechanism to reduce redundant or low-signal notifications
+- a better feedback loop so incident managers could help improve the anomaly engine over time
+
+## what mattered technically
+
+The most interesting challenge was not simply collecting more data. It was deciding what form of backend support actually helped operators. A system can surface huge volumes of information and still fail if it does not reduce cognitive load at the moment someone needs to act.
+
+Working on the knowledge base also made retrieval quality feel very concrete. Timeliness, structure, and domain specificity matter a lot more when the target user is responding to an incident instead of casually exploring information.
+
+## what I learned
+
+This role strengthened my appreciation for backend systems that sit close to operations. I enjoyed building features where the impact could be measured in response quality and time saved, not just throughput or architecture elegance.

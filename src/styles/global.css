@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+
+:root {
+  --bg: #fcfcfa;
+  --text: #222222;
+  --muted: #666666;
+  --accent: #a03a44;
+  --line: #d8d3cd;
+  --page-width: 760px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "IBM Plex Mono", monospace;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+hr {
+  margin: 1.35rem 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+}
+
+code,
+pre {
+  font-family: inherit;
+}
+
+code {
+  padding: 0 0.2rem;
+  background: #f1eeea;
+}
+
+pre {
+  overflow-x: auto;
+  padding: 0.75rem 0.9rem;
+  background: #f1eeea;
+}
+
+pre code {
+  padding: 0;
+  background: transparent;
+}
+
+.site-frame {
+  width: min(calc(100% - 2rem), var(--page-width));
+  margin: 0 auto;
+  padding: 2.75rem 0 3rem;
+}
+
+.masthead {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.brand {
+  color: var(--text);
+  font-size: 1.95rem;
+  font-weight: 600;
+}
+
+.brand:hover {
+  color: var(--text);
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.site-nav a {
+  color: var(--accent);
+}
+
+.site-nav a.active,
+.site-nav a[aria-current="page"] {
+  color: var(--text);
+}
+
+.site-nav a.active:hover,
+.site-nav a[aria-current="page"]:hover {
+  color: var(--text);
+}
+
+.nav-separator {
+  color: var(--muted);
+}
+
+.site-main {
+  min-height: 55vh;
+}
+
+.site-footer {
+  color: var(--muted);
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.prose-page h1 {
+  margin: 0 0 0.9rem;
+  font-size: 1.95rem;
+  line-height: 1.1;
+}
+
+.prose-page h2,
+.prose-page h3,
+.prose-page h4,
+.prose-page h5,
+.prose-page h6 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.prose-page h2 {
+  font-size: 1.15rem;
+}
+
+.prose-page p,
+.prose-page ul,
+.prose-page ol,
+.prose-page blockquote {
+  margin: 0 0 0.85rem;
+}
+
+.prose-page ul,
+.prose-page ol {
+  padding-left: 1.3rem;
+}
+
+.prose-page li + li {
+  margin-top: 0.25rem;
+}
+
+.prose-page blockquote {
+  padding-left: 0.85rem;
+  border-left: 3px solid var(--accent);
+  color: var(--muted);
+}
+
+.page-intro,
+.entry-meta,
+.entry-list-meta {
+  color: var(--muted);
+}
+
+.entry-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.entry-list li + li {
+  margin-top: 1.2rem;
+}
+
+.entry-list-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.entry-list-title a {
+  color: var(--text);
+}
+
+.entry-list-title a:hover {
+  color: var(--accent);
+}
+
+.entry-list-meta {
+  margin: 0.15rem 0 0.3rem;
+  font-size: 0.95rem;
+}
+
+.entry-list-summary {
+  margin: 0;
+}
+
+.inline-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin: 0 0 0.85rem;
+}
+
+.back-link {
+  margin: 0 0 0.9rem;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.45rem;
+  align-items: baseline;
+}
+
+.contact-label {
+  flex: 0 0 10ch;
+  color: var(--muted);
+}
+
+.contact-list li > :last-child {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 640px) {
+  html {
+    font-size: 16px;
+  }
+
+  .site-frame {
+    width: min(calc(100% - 1.5rem), var(--page-width));
+    padding-top: 1.75rem;
+  }
+
+  .masthead {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.45rem;
+  }
+}

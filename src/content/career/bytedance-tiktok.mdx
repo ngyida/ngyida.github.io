@@ -1,0 +1,40 @@
+---
+title: "Security Engineering at ByteDance / TikTok"
+summary: "Worked on backend security systems around IAM and code signing, with a mix of implementation work and early product shaping."
+listBlurb: "IAM and code-signing backend work inside a production security engineering environment."
+period: "Aug 2024 - Present"
+organization: "ByteDance / TikTok"
+location: "Singapore"
+sortOrder: 1
+tags:
+  - Go
+  - MySQL
+  - AWS
+  - Security
+links:
+  - label: "company"
+    url: "https://www.bytedance.com/en/"
+---
+
+## context
+
+This role put me in the middle of security-sensitive backend work, which was exactly the kind of environment I wanted more exposure to. The problems were not abstract. They touched trust boundaries, internal platform expectations, and the practical constraints of teams that need secure systems without losing development speed.
+
+## what I worked on
+
+I worked on two threads that I found especially meaningful.
+
+- a managed code-signing service backed by ByteDance's distributed key management capabilities
+- a cloud identity and access management proof of concept with emphasis on authentication flows
+
+Both required more than writing isolated endpoints. They involved understanding what internal users needed, what security properties were non-negotiable, and where the product surface needed to stay intentionally narrow.
+
+## what mattered technically
+
+The code-signing work was interesting because it sat at the intersection of security guarantees and operational usability. The system needed to integrate with internal trust infrastructure while still feeling manageable for application teams that were not security specialists.
+
+The IAM work was interesting for a different reason. It forced me to think about authentication not only as a protocol problem, but as a product problem. Even early decisions around interfaces, assumptions, and defaults affect whether the eventual system will feel comprehensible.
+
+## what I learned
+
+This period sharpened my interest in security infrastructure as a career direction. I learned that I enjoy systems where correctness matters, but where product framing still has real weight. I also learned that early-stage platform work benefits from close feedback loops with the people who will eventually depend on it.

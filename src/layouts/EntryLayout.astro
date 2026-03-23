@@ -1,0 +1,54 @@
+---
+import SiteLayout from "./SiteLayout.astro";
+
+interface LinkItem {
+  label: string;
+  url: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  summary: string;
+  meta?: string;
+  backHref: string;
+  backLabel: string;
+  links?: LinkItem[];
+}
+
+const {
+  title,
+  description,
+  summary,
+  meta,
+  backHref,
+  backLabel,
+  links = [],
+} = Astro.props;
+---
+
+<SiteLayout title={title} description={description}>
+  <article class="prose-page">
+    <p class="back-link">
+      <a href={backHref}>back to {backLabel}</a>
+    </p>
+
+    <h1>{title}</h1>
+    {meta && <p class="entry-meta">{meta}</p>}
+    <p class="page-intro">{summary}</p>
+    {
+      links.length > 0 && (
+        <div class="inline-links" aria-label="Related links">
+          {links.map((link) => (
+            <a href={link.url} target="_blank" rel="noreferrer">
+              {link.label}
+            </a>
+          ))}
+        </div>
+      )
+    }
+
+    <hr />
+    <slot />
+  </article>
+</SiteLayout>
