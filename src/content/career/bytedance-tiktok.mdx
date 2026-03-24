@@ -1,9 +1,9 @@
 ---
-title: "Security Engineering at ByteDance / TikTok"
-summary: "Worked on backend security systems around IAM and code signing, with a mix of implementation work and early product shaping."
-listBlurb: "IAM and code-signing backend work inside a production security engineering environment."
-period: "Aug 2024 - Present"
-organization: "ByteDance / TikTok"
+title: "SWE intern at ByteDance"
+summary: "Worked on Key Management System"
+listBlurb: "Worked on Key Management System"
+period: "Sep 2024 - Feb 2025"
+organization: "ByteDance"
 location: "Singapore"
 sortOrder: 1
 tags:
@@ -16,25 +16,31 @@ links:
     url: "https://www.bytedance.com/en/"
 ---
 
-## context
+## Context
 
-This role put me in the middle of security-sensitive backend work, which was exactly the kind of environment I wanted more exposure to. The problems were not abstract. They touched trust boundaries, internal platform expectations, and the practical constraints of teams that need secure systems without losing development speed.
+This was my last internship during my final-year in university.
 
-## what I worked on
+I joined the Security Engineering team that manages a wide-range of products, ranging from code-signing, IAM to Key Management.
 
-I worked on two threads that I found especially meaningful.
+## My work
 
-- a managed code-signing service backed by ByteDance's distributed key management capabilities
-- a cloud identity and access management proof of concept with emphasis on authentication flows
+I worked on two main projects:
 
-Both required more than writing isolated endpoints. They involved understanding what internal users needed, what security properties were non-negotiable, and where the product surface needed to stay intentionally narrow.
+### 1. Tag management for Key Management product on Bytedance's cloud-computing service https://www.volcengine.com/docs/6476/1526504?lang=en
 
-## what mattered technically
+- Engineered resource tagging capability from 0-to-1, fully compliant with the Cloud service
+- Enhanced several core features with tags integration, such as access control, cost tracking & resource management
+- Deployed on Bytedance's cloud-computing service, in-use by many tech companies 
 
-The code-signing work was interesting because it sat at the intersection of security guarantees and operational usability. The system needed to integrate with internal trust infrastructure while still feeling manageable for application teams that were not security specialists.
+### 2. Service reliability for internal code-signing tool
 
-The IAM work was interesting for a different reason. It forced me to think about authentication not only as a protocol problem, but as a product problem. Even early decisions around interfaces, assumptions, and defaults affect whether the eventual system will feel comprehensible.
+- Took full charge of the reliability of a new code-signing tool
+- Proposed and implemented various reliability standards, includes: stress test, automated E2E test, multi-region deployment pipeline
+- Drafted the official product SLI 
 
-## what I learned
+## My takeaways
 
-This period sharpened my interest in security infrastructure as a career direction. I learned that I enjoy systems where correctness matters, but where product framing still has real weight. I also learned that early-stage platform work benefits from close feedback loops with the people who will eventually depend on it.
+One surprising thing that I learned about: cloud service demands rigorous requirements & compliance standards from its products.
+Along with the usual complexities that comes with the matured product, the technical design was definitely challenging and fun. 
+
+Also picked up a pseudo-engineering aspect, specifically reliability engineering.
