@@ -1,37 +1,41 @@
 ---
-title: "Research Engineering at A*STAR"
-summary: "Contributed to a high-performance homomorphic encryption compiler project, with emphasis on bindings and practical experimentation."
-listBlurb: "Research engineering around compilers, Python bindings, and homomorphic encryption."
+title: "Software Researcher intern at A*STAR"
+summary: "Worked on Homomorphic Convolutional Neural Network"
+listBlurb: "Worked on Homomorphic Convolutional Neural Network"
 period: "May 2022 - Jul 2022"
 organization: "A*STAR"
 location: "Singapore"
 sortOrder: 5
 tags:
   - C++
-  - Python
-  - Compilers
   - Research
 links:
   - label: "organization"
     url: "https://www.a-star.edu.sg/"
 ---
 
-## context
+## Context
 
-This was one of the most research-oriented environments I worked in. The core problem space was advanced, but the contribution still needed to translate into something usable by collaborators and external evaluators.
+During my first-year undergraduate internship, I joined a research lab focused on machine learning and software security.
+The team was building a high-performance homomorphic CNN for private image inference.
 
-## what I worked on
+The theoretical and cryptographic design was led by postdoctoral researchers.
+My role was to translate part of that design into efficient, reliable C++.
 
-My work included:
+## My work
 
-- contributing to a homomorphic encryption compiler effort
-- building Python bindings so the system became easier to test and integrate
-- experimenting with machine-learning use cases on encrypted data to probe feasibility
 
-## what mattered technically
+I built a highly performant data layer module in C++ that maps tensors into ciphertext slots for downstream encrypted computation.
+This module sat in a performance-critical path. 
+The math, fixed by the research design, was computationally expensive and implementation quality dictated runtime performance.
 
-The Python binding work stood out because it was a translation problem in the best sense. It required preserving performance and interface clarity while exposing a system that would otherwise remain distant from many users.
+The module was deployed in large-scale research testing methodology that were costly, and the efficient runtime behaviour contributed to a lowered cost.
 
-## what I learned
 
-I learned that I enjoy research work most when it has an implementation bridge. I like the moment where advanced ideas have to become usable surfaces rather than remaining purely conceptual.
+## My takeaways
+
+Learned all about building a performance-oriented C++ system:
+- How memory behavior and object lifetime decisions affect runtime
+- How to structure low-level modules for both speed and maintainability
+- How to balance correctness, performance, and interface design in research-grade systems
+- How to collaborate effectively with researchers by turning complex theory into dependable code
