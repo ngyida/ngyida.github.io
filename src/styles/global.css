@@ -217,6 +217,29 @@ pre code {
   margin: 0 0 0.85rem;
 }
 
+.project-collapsible {
+  margin: 0;
+}
+
+.project-collapsible summary {
+  cursor: pointer;
+  color: var(--text);
+  font-weight: 500;
+  margin-bottom: 0.85rem;
+}
+
+.project-collapsible summary:hover {
+  color: var(--accent);
+}
+
+.project-collapsible[open] summary {
+  margin-bottom: 1rem;
+}
+
+.project-collapsible-empty {
+  color: var(--muted);
+}
+
 .back-link {
   margin: 0 0 0.9rem;
 }
