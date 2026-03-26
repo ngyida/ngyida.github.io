@@ -5,6 +5,7 @@ import {
   buildProjectLinks,
   buildProjectMeta,
   getPageEntry,
+  getProjectGroup,
   getProjectEntries,
   toCollectionHref,
   toEntrySlug,
@@ -12,8 +13,8 @@ import {
 
 const page = await getPageEntry("projects");
 const entries = await getProjectEntries();
-const coolEntries = entries.filter((entry) => entry.data.projectType === "cool");
-const notCoolEntries = entries.filter((entry) => entry.data.projectType === "not-cool");
+const coolEntries = entries.filter((entry) => getProjectGroup(entry) === "cool");
+const notCoolEntries = entries.filter((entry) => getProjectGroup(entry) === "not-cool");
 const { Content } = await render(page);
 ---
 

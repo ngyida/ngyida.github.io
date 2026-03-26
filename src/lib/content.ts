@@ -91,3 +91,8 @@ export function buildProjectLinks(entry: CollectionEntry<"projects">) {
 
   return links;
 }
+
+export function getProjectGroup(entry: CollectionEntry<"projects">) {
+  const normalizedId = entry.id.replace(/\\/g, "/").toLowerCase();
+  return normalizedId.includes("not-cool/") ? "not-cool" : "cool";
+}

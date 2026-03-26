@@ -41,7 +41,6 @@ const projects = defineCollection({
     title: z.string(),
     summary: z.string(),
     listBlurb: z.string(),
-    projectType: z.enum(["cool", "not-cool"]).default("cool"),
     period: z.string().optional(),
     stack: z.array(z.string()).optional(),
     sortOrder: z.number().int(),
