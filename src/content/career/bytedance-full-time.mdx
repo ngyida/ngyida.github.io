@@ -1,42 +1,59 @@
 ---
-title: "SWE (full-time) at Bytedance"
-summary: "Worked on Authorization System"
+title: "SWE (full-time) at ByteDance"
+summary: "Worked on global authorization systems"
 period: "July 2025 - Present"
 companyUrl: "https://www.bytedance.com/en/"
 sortOrder: 0
 ---
 
-## Context
+## context
 
-My first full time job out of university.
+This was my first full-time role out of university, and it dropped me straight into a part of engineering I enjoy a lot: 
+systems with real scale, real constraints, and very little room for hand-wavy thinking.
 
-I joined a team that builds a global authorization system. 
-Our system spans nearly a hundred regions around the world, offering multiple authorization models and capability that serves major Bytedance product lines such as Tiktok, Volcano Engine & SEED. 
+I joined a team building a global authorization platform. 
+The system spans close to a hundred regions, supports multiple authorization models, and serves major [ByteDance](https://www.bytedance.com/en/) product lines such as [TikTok](https://www.tiktok.com/), [Volcano Engine](https://www.volcengine.com/), and [SEED](https://seed.bytedance.com/en/).
 
-## My work
+What I liked about this space is that authorization sits at an crucially important intersection: 
+correctness matters, latency matters, product semantics matter, and the mistakes are rarely trivial.
 
-Worked on many things, below are my top 3 favourite projects:
+## my work
+
+I worked on a bunch of things, but these were probably my three favorite projects because each of them felt like a different flavor of systems problem.
 
 ### 1. Engineered a new powerful ABAC model 
 
-- smoothly integrated with the existing RBAC & PBAC model
-- unlocked a whole new dimension of authorization that led to the onboarding of new customers whose requirements were previously not met by older models
+- designed and integrated a new ABAC model alongside the existing RBAC and PBAC models
+- expanded the system's expressiveness enough to support customer requirements that the older models could not handle cleanly
 
-### 2. Drove an initiation to improve explainability of authorization
+I liked this one because it was not just about adding a feature. 
+It was about extending the model in a way that stayed compatible with the system that already existed, which is usually the harder part.
 
-- innovated 2 new approachs to improve explainability: 
-    - provide visibility of complex authorization graph that can be leveraged for root cause analysis
-    - regain business semantics of our customers through reverse-abstraction features. as a resourec agnostic platform, the system is previously unaware of platform's business semantics and often caused confusion within end-users.
+### 2. Led an initiative to improve authorization explainability
+
+I introduced two new approaches to make authorization decisions easier to understand:
+- visibility into full authorization graphs, useful for debugging and root cause analysis
+- reverse-abstraction on our platform so customers could reason about authorization using business concepts they already understood, instead of the abstractions integrated onto our platform.
+
+My initivatives turned into actual tools that enhanced the customers' understanding of our system. 
+More importantly, customers are empowered to self-help and incident debugging are minimized for the team.
 
 ### 3. Built a high-performance, low-latency authorization SDK
 
-- solved the bottleneck of network I/O by serving authorization locally
-- built supporting architectures to achieve a hybrid push-pull caching mechanism for the SDK
+- removed network I/O from the critical path by serving authorization locally
+- tackled high memory usage with techniques such as data compression and data structures like roaring bitmaps
+- built the surrounding architecture for a hybrid push-pull caching mechanism
 - achieved an average latency of 0.08ms on authorization checks
 
-## My takeaways
+This one was especially satisfying because it had the technical full package: 
+latency constraints, memory tradeoffs, caching design, and the kind of engineering work where every decision leaks into another one.
 
-Problem-solving goes way beyond implementation. Dont get me wrong, technical competency is still the foundation for engineers. 
-However, real problem-solving is carried out when one actively identifies a problem, explore various approaches, before committing to engineering the solution.
-The harder the problem you solved, the higher your impact is as an engineer.
-Right now, I am just excited to go into office and find new problems, then solve them as elegantly as possible.
+## my takeaways
+
+This role pushed me to think about problem-solving as something much broader than implementation.
+
+Technical competency still matters a lot, obviously. But the more interesting part of engineering is usually earlier: identifying the actual problem, understanding the constraints properly, exploring different ways to attack it, and only then committing to a solution.
+
+I think this role also made me appreciate that impact often comes from choosing the right problem to solve, not just solving a chosen problem quickly.
+
+For now, I am mostly just excited to keep showing up, finding sharper problems, and solving them as cleanly as I can.
