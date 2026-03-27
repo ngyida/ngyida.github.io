@@ -4,6 +4,7 @@ import EntryLayout from "../../layouts/EntryLayout.astro";
 import {
   buildCareerLinks,
   buildCareerMeta,
+  buildCareerTitleParts,
   getCareerEntries,
   toEntrySlug,
 } from "../../lib/content";
@@ -23,10 +24,12 @@ interface Props {
 
 const { entry } = Astro.props;
 const { Content } = await render(entry);
+const titleParts = buildCareerTitleParts(entry);
 ---
 
 <EntryLayout
   title={entry.data.title}
+  titleParts={titleParts}
   description={entry.data.summary}
   summary={entry.data.summary}
   meta={buildCareerMeta(entry)}

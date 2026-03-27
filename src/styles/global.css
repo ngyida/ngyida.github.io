@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap");
 
 :root {
   --bg: #fcfcfa;
@@ -16,14 +16,14 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
   line-height: 1.5;
   text-rendering: optimizeLegibility;
 }
@@ -135,6 +135,10 @@ pre code {
   line-height: 1.1;
 }
 
+.entry-title-company {
+  color: var(--accent);
+}
+
 .prose-page h2,
 .prose-page h3,
 .prose-page h4,
@@ -208,6 +212,55 @@ pre code {
 
 .entry-list-summary {
   margin: 0;
+}
+
+.career-entry-list {
+  list-style: disc;
+  padding-left: 1.1rem;
+  margin-top: 0.35rem;
+}
+
+.career-entry-list li + li {
+  margin-top: 0.35rem;
+}
+
+.career-entry-item {
+  padding: 0;
+}
+
+.career-entry-item::marker {
+  color: var(--muted);
+}
+
+.career-entry-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.45rem;
+}
+
+.career-entry-item .entry-list-title {
+  font-size: 0.95rem;
+  line-height: 1.25;
+}
+
+.career-entry-item .entry-list-title a,
+.career-entry-item .entry-list-title a:hover {
+  color: var(--accent);
+}
+
+.career-entry-item .entry-list-meta {
+  margin: 0;
+  white-space: nowrap;
+  font-size: 0.82rem;
+  line-height: 1.2;
+}
+
+.career-entry-item .entry-list-summary {
+  margin: 0.04rem 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.28;
 }
 
 .inline-links {
@@ -323,7 +376,7 @@ pre code {
 
 @media (max-width: 640px) {
   html {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .site-frame {
@@ -336,4 +389,15 @@ pre code {
     align-items: flex-start;
     gap: 0.45rem;
   }
+
+  .career-entry-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.03rem;
+  }
+
+  .career-entry-item .entry-list-meta {
+    white-space: normal;
+  }
+
 }

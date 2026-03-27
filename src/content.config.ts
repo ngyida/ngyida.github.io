@@ -17,12 +17,9 @@ const career = defineCollection({
   schema: z.object({
     title: z.string(),
     summary: z.string(),
-    listBlurb: z.string(),
     period: z.string(),
-    organization: z.string(),
-    location: z.string().optional(),
+    companyUrl: z.string().url().optional(),
     sortOrder: z.number().int(),
-    tags: z.array(z.string()).optional(),
     links: z
       .array(
         z.object({
@@ -40,7 +37,6 @@ const projects = defineCollection({
   schema: z.object({
     title: z.string(),
     summary: z.string(),
-    listBlurb: z.string(),
     period: z.string().optional(),
     stack: z.array(z.string()).optional(),
     sortOrder: z.number().int(),

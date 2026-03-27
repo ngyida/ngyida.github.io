@@ -6,10 +6,17 @@ interface LinkItem {
   url: string;
 }
 
+interface TitleParts {
+  prefix: string;
+  organization: string | null;
+  companyUrl: string | null;
+}
+
 interface Props {
   title: string;
   description: string;
   summary: string;
+  titleParts?: TitleParts;
   meta?: string;
   backHref: string;
   backLabel: string;
@@ -20,6 +27,7 @@ const {
   title,
   description,
   summary,
+  titleParts,
   meta,
   backHref,
   backLabel,
@@ -33,7 +41,29 @@ const {
       <a href={backHref}>back to {backLabel}</a>
     </p>
 
-    <h1>{title}</h1>
+    <h1>
+      {
+        titleParts?.organization ? (
+          <>
+            {titleParts.prefix}
+            {titleParts.companyUrl ? (
+              <a
+                class="entry-title-company"
+                href={titleParts.companyUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {titleParts.organization}
+              </a>
+            ) : (
+              <span class="entry-title-company">{titleParts.organization}</span>
+            )}
+          </>
+        ) : (
+          title
+        )
+      }
+    </h1>
     {meta && <p class="entry-meta">{meta}</p>}
     <p class="page-intro">{summary}</p>
     {

@@ -63,19 +63,42 @@ export async function getProjectEntries() {
 }
 
 export function buildCareerMeta(entry: CollectionEntry<"career">) {
-  return [entry.data.organization, entry.data.period, entry.data.location]
-    .filter(Boolean)
-    .join(" / ");
+  return entry.data.period;
 }
 
 export function buildProjectMeta(entry: CollectionEntry<"projects">) {
-  const stackLabel = entry.data.stack?.join(", ");
-
-  return [entry.data.period, stackLabel].filter(Boolean).join(" / ");
+  return entry.data.period ?? "";
 }
 
 export function buildCareerLinks(entry: CollectionEntry<"career">) {
-  return entry.data.links ?? [];
+  return (entry.data.links ?? []).filter(
+    (link) => !["company", "organization"].includes(link.label.toLowerCase())
+  );
+}
+
+interface CareerTitleParts {
+  prefix: string;
+  organization: string | null;
+  companyUrl: string | null;
+}
+
+export function buildCareerTitleParts(entry: CollectionEntry<"career">): CareerTitleParts {
+  const marker = " at ";
+  const markerIndex = entry.data.title.lastIndexOf(marker);
+
+  if (markerIndex < 0) {
+    return {
+      prefix: entry.data.title,
+      organization: null,
+      companyUrl: null,
+    };
+  }
+
+  return {
+    prefix: entry.data.title.slice(0, markerIndex + marker.length),
+    organization: entry.data.title.slice(markerIndex + marker.length),
+    companyUrl: entry.data.companyUrl ?? null,
+  };
 }
 
 export function buildProjectLinks(entry: CollectionEntry<"projects">) {

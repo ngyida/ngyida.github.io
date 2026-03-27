@@ -2,7 +2,6 @@
 import { render } from "astro:content";
 import ProsePageLayout from "../layouts/ProsePageLayout.astro";
 import {
-  buildProjectLinks,
   buildProjectMeta,
   getPageEntry,
   getProjectGroup,
@@ -28,30 +27,21 @@ const { Content } = await render(page);
   <hr />
   <h2>cool projects</h2>
 
-  <ol class="entry-list">
+  <ul class="entry-list career-entry-list">
     {
       coolEntries.map((entry) => (
-        <li>
-          <h3 class="entry-list-title">
-            <a href={toCollectionHref("projects", toEntrySlug(entry))}>{entry.data.title}</a>
-          </h3>
-          <p class="entry-list-meta">{buildProjectMeta(entry)}</p>
-          <p class="entry-list-summary">{entry.data.listBlurb}</p>
-          {
-            buildProjectLinks(entry).length > 0 && (
-              <div class="inline-links">
-                {buildProjectLinks(entry).map((link) => (
-                  <a href={link.url} target="_blank" rel="noreferrer">
-                    {link.label}
-                  </a>
-                ))}
-              </div>
-            )
-          }
+        <li class="career-entry-item">
+          <div class="career-entry-head">
+            <h3 class="entry-list-title">
+              <a href={toCollectionHref("projects", toEntrySlug(entry))}>{entry.data.title}</a>
+            </h3>
+            {buildProjectMeta(entry) && <p class="entry-list-meta">{buildProjectMeta(entry)}</p>}
+          </div>
+          {entry.data.summary && <p class="entry-list-summary">{entry.data.summary}</p>}
         </li>
       ))
     }
-  </ol>
+  </ul>
 
   <hr />
 
@@ -59,32 +49,23 @@ const { Content } = await render(page);
     <summary>not-cool projects</summary>
     {
       notCoolEntries.length > 0 ? (
-        <ol class="entry-list">
+        <ul class="entry-list career-entry-list">
           {
             notCoolEntries.map((entry) => (
-              <li>
-                <h3 class="entry-list-title">
-                  <a href={toCollectionHref("projects", toEntrySlug(entry))}>
-                    {entry.data.title}
-                  </a>
-                </h3>
-                <p class="entry-list-meta">{buildProjectMeta(entry)}</p>
-                <p class="entry-list-summary">{entry.data.listBlurb}</p>
-                {
-                  buildProjectLinks(entry).length > 0 && (
-                    <div class="inline-links">
-                      {buildProjectLinks(entry).map((link) => (
-                        <a href={link.url} target="_blank" rel="noreferrer">
-                          {link.label}
-                        </a>
-                      ))}
-                    </div>
-                  )
-                }
+              <li class="career-entry-item">
+                <div class="career-entry-head">
+                  <h3 class="entry-list-title">
+                    <a href={toCollectionHref("projects", toEntrySlug(entry))}>
+                      {entry.data.title}
+                    </a>
+                  </h3>
+                  {buildProjectMeta(entry) && <p class="entry-list-meta">{buildProjectMeta(entry)}</p>}
+                </div>
+                {entry.data.summary && <p class="entry-list-summary">{entry.data.summary}</p>}
               </li>
             ))
           }
-        </ol>
+        </ul>
       ) : (
         <p class="project-collapsible-empty">No not-cool projects yet.</p>
       )
