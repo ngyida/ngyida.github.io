@@ -1,36 +1,41 @@
 ---
 title: "SWE (intern) at ByteDance"
-summary: "Worked on Key Management System"
+summary: "Worked on key management and reliability engineering"
 period: "Sep 2024 - Feb 2025"
 companyUrl: "https://www.bytedance.com/en/"
 sortOrder: 1
 ---
 
-## Context
+## context
 
-This was my last internship during my final-year in university.
+This was my final internship before graduating.
 
-I joined the Security Engineering team that manages a wide-range of products, ranging from code-signing, IAM to Key Management.
+I joined the Security Engineering team, which worked across a wide range of systems including code signing, IAM, and key management. 
 
-## My work
+## my work
 
-I worked on two main projects:
+I mainly worked on two projects:
 
-### 1. Tag management for Key Management product on Bytedance's cloud-computing service https://www.volcengine.com/docs/6476/1526504?lang=en
+### 1. Built tag management for a key management product on [Volcano Engine](https://www.volcengine.com/)
 
-- Engineered resource tagging capability from 0-to-1, fully compliant with the Cloud service
-- Enhanced several core features with tags integration, such as access control, cost tracking & resource management
-- Deployed on Bytedance's cloud-computing service, in-use by many tech companies 
+- built tagging framework from 0 to 1, while keeping it compliant with the surrounding cloud platform requirements
+- integrated tags into core product features such as access control, cost tracking, and resource management
+- shipped and used by external customers, with [official documentation](https://www.volcengine.com/docs/6476/1526504?lang=en) 
 
-### 2. Service reliability for internal code-signing tool
+### 2. Improved service reliability for an internal code-signing tool
 
-- Took full charge of the reliability of a new code-signing tool
-- Proposed and implemented various reliability standards, includes: stress test, automated E2E test, multi-region deployment pipeline
-- Drafted the official product SLI 
+- took ownership of the reliability work for a new code-signing tool
+- proposed and implemented reliability practices including stress testing, automated end-to-end testing, and a multi-region deployment pipeline
+- drafted the product's official SLI
 
-## My takeaways
 
-One surprising thing that I learned about: cloud service demands rigorous requirements & compliance standards from its products.
-Along with the usual complexities that comes with the matured product, the technical design was definitely challenging and fun. 
+## my takeaways
 
-Also picked up a pseudo-engineering aspect, specifically reliability engineering.
+One thing this internship made very obvious to me is that mature products (like Volcano Engine) come with rigorous requirements and compliance expectations. 
+You are not just building something that works. 
+You are building something that fits into a larger contract with users, operators, and the platform around it.
+This adds multiple dimensions onto the technical complexities.
+
+I also got my first proper exposure to reliability engineering. 
+It was different from the kind of work that I am drawn to, but very memorable still.
+I had vaguely understood it before, but this role made it feel concrete. It was one of the first times I really appreciated that good engineering is often about reducing the number of ways a system can fail, not just increasing the number of things it can do.
