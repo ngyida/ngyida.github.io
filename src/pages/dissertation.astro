@@ -1,0 +1,43 @@
+---
+import fs from "node:fs";
+import path from "node:path";
+import SiteLayout from "../layouts/SiteLayout.astro";
+
+const pdfPath = path.join(process.cwd(), "public", "docs", "dissertation.pdf");
+const hasPdf = fs.existsSync(pdfPath);
+const pdfHref = "/docs/dissertation.pdf";
+---
+
+<SiteLayout
+  title="Dissertation"
+  description="Final-year dissertation by Yi Da"
+>
+  <article class="prose-page">
+    <h1>Dissertation</h1>
+    <p class="page-intro">
+      The full write-up for my final-year anomaly detection project lives here.
+    </p>
+
+    {
+      hasPdf ? (
+        <>
+          <p>
+            If the embedded viewer does not load properly, you can also open the PDF directly
+            <a href={pdfHref} target="_blank" rel="noreferrer"> here</a>.
+          </p>
+          <iframe
+            src={pdfHref}
+            title="Dissertation PDF"
+            style="width: 100%; min-height: 80vh; border: 1px solid var(--line); border-radius: 0.4rem; background: white;"
+          />
+        </>
+      ) : (
+        <>
+          <p>
+            The dissertation PDF has not been added yet. Contact me if you wish to read it.
+          </p>
+        </>
+      )
+    }
+  </article>
+</SiteLayout>
