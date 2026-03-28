@@ -1,6 +1,6 @@
 ---
 title: "Explainable Anomaly Detection"
-summary: "Undergrad final-year work in collaboration with GovTech"
+summary: "Making a new framework usable"
 period: "2024 - 2025"
 stack:
   - Python
@@ -8,21 +8,24 @@ stack:
   - Log Analysis
   - Security
 sortOrder: 1
-repoUrl: "https://github.com/JasonBourne1998/TamperLogPrompt"
 ---
 
 ## context
 
-This project sat at a point I find especially compelling: security-oriented behavior analysis with a strong need for interpretability. Detecting something unusual is useful, but in practice teams also need to know why a signal deserves attention.
+[Webnorm](https://sites.google.com/view/webnorm/home?authuser=0) is a newly proposed anomaly detection framework for web tampering. In plain terms, the goal was to identify when a website had been modified in suspicious ways, while keeping the detection process more structured and reliable than a simple bag of heuristics.
 
-## what I built
+The research project was developed through a collaboration between researchers from [GovTech](https://www.tech.gov.sg/), [NUS](https://www.comp.nus.edu.sg/), and [SJTU](https://en.sjtu.edu.cn/).
 
-The project focused on detecting anomalies caused by web tamper attacks and exploring ways to explain those anomalies in a form that was useful to humans reviewing the results.
+## my contribution
 
-## what mattered technically
+Webnorm had promising initial results, but it also had some fairly obvious next questions around usability, robustness, and cost.
 
-The interesting challenge was balancing detection quality with explanation quality. A system that flags the right behavior but cannot support investigation is incomplete. That made representation, prompting, and output framing just as important as the raw anomaly signal.
+My contribution focused on three areas:
 
-## what I learned
+- improving the explainability of its results
+- studying security concerns around the use of LLM components in the system
+- reducing the cost of using the tool in practice
 
-This project reinforced my interest in security-adjacent backend and applied intelligence problems, especially where the end goal is not just prediction but decision support.
+What made the project interesting to me was that those three concerns were not really separate. A system that is accurate but hard to interpret is difficult to trust. A system that is clever but easy to abuse is difficult to deploy. And a system that works but is too expensive to run is difficult to justify.
+
+In short, the work was about making the tool feel more viable. The longer version of this project lives in my [dissertation](https://dl.comp.nus.edu.sg/handle/1900.100/18266), if you want the full write-up.
