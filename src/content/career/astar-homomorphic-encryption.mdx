@@ -1,33 +1,38 @@
 ---
 title: "Software researcher (intern) at A*STAR"
-summary: "Worked on C++ Homomorphic Convolutional Neural Network"
+summary: "Worked on performance-critical C++ for homomorphic CNN inference"
 period: "May 2022 - Jul 2022"
 companyUrl: "https://www.a-star.edu.sg/"
 sortOrder: 3
 ---
 
-## Context
+## context
 
-During my first-year undergraduate internship, I joined a research lab focused on machine learning and software security.
-The team was building a high-performance homomorphic CNN for private image inference.
+This was my first internship in university, and it dropped me into a kind of problem that I still find very fun: heavy technical constraints, unusual theory, and performance work that actually matters.
 
-The theoretical and cryptographic design was led by postdoctoral researchers.
-My role was to translate part of that design into efficient, reliable C++.
+I joined a research lab working at the intersection of machine learning and software security. The team was building a high-performance homomorphic CNN for private image inference, which is a compact way of saying: we were trying to do useful ML computation under some very unfriendly constraints.
 
-## My work
+The theoretical and cryptographic design was led by postdoctoral researchers. My role was to translate part of that design into efficient, reliable C++.
 
+## my work
 
-I built a highly performant data layer module in C++ that maps tensors into ciphertext slots for downstream encrypted computation.
-This module sat in a performance-critical path. 
-The math, fixed by the research design, was computationally expensive and implementation quality dictated runtime performance.
+I built a performance-critical data layer module in C++ that mapped tensors into ciphertext slots for downstream encrypted computation.
 
-The module was deployed in large-scale research testing methodology that were costly, and the efficient runtime behaviour contributed to a lowered cost.
+This sat directly on a hot path. The math was already fixed by the research design and was inherently expensive, so a lot of the performance came down to implementation quality: memory behavior, object lifetime, data movement.
 
+The module was used in large-scale research experiments where runtime translated pretty directly into iteration cost. Making it faster meant making the overall research loop cheaper and easier to run.
 
-## My takeaways
+I liked this work because it felt like a clean example of engineering inside hard constraints where I had plenty of room to make the system meaningfully better.
 
-Learned all about building a performance-oriented C++ system:
-- How memory behavior and object lifetime decisions affect runtime
-- How to structure low-level modules for both speed and maintainability
-- How to balance correctness, performance, and interface design in research-grade systems
-- How to collaborate effectively with researchers by turning complex theory into dependable code
+## my takeaways
+
+This was one of the experiences that made me enjoy performance-oriented C++ work in the first place.
+
+It taught me:
+
+- how much memory behavior and object lifetime decisions can affect runtime
+- how to structure low-level modules for both speed and maintainability
+- how to balance correctness, performance, and interface design in research-heavy systems
+- how to work with researchers by turning abstract or mathematically dense ideas into dependable code
+
+More broadly, it taught me that even when the high-level design is fixed, there is still a lot of engineering judgment hiding in the implementation.
