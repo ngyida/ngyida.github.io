@@ -1,39 +1,40 @@
 ---
 title: "SWE (full-time) at ByteDance"
-summary: "Worked on global authorization systems"
+summary: "Worked on distributed authorization systems"
 period: "July 2025 - Present"
 companyUrl: "https://www.bytedance.com/en/"
 sortOrder: 0
 ---
 
-## context
+## Context
 
-This was my first full-time role out of university, and it dropped me straight into a part of engineering I enjoy a lot: 
-systems with real scale, real constraints, and very little room for hand-wavy thinking.
+This was my first full-time role out of university
 
-I joined a team building a global authorization platform. 
-The system spans close to a hundred regions, supports multiple authorization models, and serves major [ByteDance](https://www.bytedance.com/en/) product lines such as [TikTok](https://www.tiktok.com/), [Volcano Engine](https://www.volcengine.com/), and [SEED](https://seed.bytedance.com/en/).
+My team builds a distributed authorization platform that spans close to a hundred regions.
+It serves major [ByteDance](https://www.bytedance.com/en/) product lines such as [TikTok](https://www.tiktok.com/), [Volcano Engine](https://www.volcengine.com/), and [SEED](https://seed.bytedance.com/en/).
 
-What I liked about this space is that authorization sits at an crucially important intersection: 
-correctness matters, latency matters, product semantics matter, and the mistakes are rarely trivial.
+It dropped me straight into a problem space that I enjoy a lot: 
+a system with large scale, real constraints, and very little room for hand-wavy performance.
+Afterall, authorization sits critically on every execution path.
 
-## my work
+## My work
 
-I worked on a bunch of things, but these were probably my three favorite projects because each of them felt like a different flavor of systems problem.
+I worked on a bunch of things, but these were probably my three favorite projects, each with a different flavor of systems problem.
 
 ### 1. Engineered a new powerful ABAC model 
 
 - designed and integrated a new ABAC model alongside the existing RBAC and PBAC models
-- expanded the system's expressiveness enough to support customer requirements that the older models could not handle cleanly
+- unlocked a new dimension of the system's expressiveness and brought in customers which the older models couldn’t support
 
 I liked this one because it was not just about adding a feature. 
-It was about extending the model in a way that stayed compatible with the system that already existed, which is usually the harder part.
+It was about extending the core system in a way that stayed compatible, which is usually the harder part.
+This scales easily with new customers, and new features become by-products of the new model. 
 
 ### 2. Led an initiative to improve authorization explainability
 
 I introduced two new approaches to make authorization decisions easier to understand:
 - visibility into full authorization graphs, useful for debugging and root cause analysis
-- reverse-abstraction on our platform so customers could reason about authorization using business concepts they already understood, instead of the abstractions integrated onto our platform.
+- reverse-abstraction so customers could reason about authorization using their own business concepts
 
 My initivatives turned into actual tools that enhanced the customers' understanding of our system. 
 More importantly, customers are empowered to self-help and incident debugging are minimized for the team.
@@ -45,10 +46,10 @@ More importantly, customers are empowered to self-help and incident debugging ar
 - built the surrounding architecture for a hybrid push-pull caching mechanism
 - achieved an average latency of 0.08ms on authorization checks
 
-This one was especially satisfying because it had the technical full package: 
+This one was satisfying because it had the technical full package: 
 latency constraints, memory tradeoffs, caching design, and the kind of engineering work where every decision leaks into another one.
 
-## my takeaways
+## My takeaways
 
 This role pushed me to think about problem-solving as something much broader than implementation.
 
