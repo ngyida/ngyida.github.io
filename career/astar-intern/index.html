@@ -1,0 +1,20 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Worked on performance-critical C++ for homomorphic CNN inference"><meta name="robots" content="noindex, nofollow, nosnippet, max-snippet:0, max-image-preview:none"><meta name="googlebot" content="noindex, nofollow, nosnippet, max-snippet:0, max-image-preview:none"><title>Software researcher (intern) at A*STAR | Yi Da</title><link rel="stylesheet" href="/_astro/SiteLayout.BpfUoBIV.css"></head> <body> <div class="site-frame"> <header class="masthead"> <a class="brand" href="/">Ng Yi Da</a> <nav class="site-nav" aria-label="Primary"> <a href="/"> about </a> <span class="nav-separator">/</span><a href="/career/" aria-current="page" class="active"> career </a> <span class="nav-separator">/</span><a href="/projects/"> projects </a> <span class="nav-separator">/</span><a href="/contact/"> contact </a>  </nav> </header> <hr> <main class="site-main">  <article class="prose-page"> <p class="back-link"> <a href="/career/">back to career</a> </p> <h1> Software researcher (intern) at <a class="entry-title-company" href="https://www.a-star.edu.sg/" target="_blank" rel="noreferrer"> A*STAR </a> </h1> <p class="entry-meta">May 2022 - Jul 2022</p> <p class="page-intro">Worked on performance-critical C++ for homomorphic CNN inference</p>  <hr>  <h2 id="context">Context</h2>
+<p>This was my first internship in university, and it dropped me into a kind of problem that I still find very fun: heavy technical constraints, unusual theory, and performance work that actually matters.</p>
+<p>I joined a research lab working on a homomorphic CNN for private image inference, which is a compact way of saying:
+we are trying to do ML without accessing user data for privacy reasons</p>
+<p>The theoretical and design work was led by postdoctoral researchers. My role was to translate part of that design into efficient, reliable C++.</p>
+<h2 id="my-work">My work</h2>
+<p>I built a performance-critical data layer module in C++ that mapped tensors into ciphertext slots for downstream encrypted computation.</p>
+<p>This sat directly on a hot path. The math was already fixed by the research design and was inherently expensive, so a lot of the performance came down to implementation quality: memory behavior, object lifetime, data movement.</p>
+<p>The module was used in repeated research experiments where runtime translated pretty directly into iteration cost. Making it faster meant making the overall research loop cheaper and faster to run.</p>
+<p>I liked this work because it felt like a clean example of engineering inside hard constraints where I had plenty of room to make the system meaningfully better.</p>
+<h2 id="my-takeaways">My takeaways</h2>
+<p>This was one of the experiences that made me enjoy performance-oriented C++ work in the first place.</p>
+<p>It taught me:</p>
+<ul>
+<li>how much memory behavior and object lifetime decisions can affect runtime</li>
+<li>how to structure low-level modules for both speed and maintainability</li>
+<li>how to balance correctness, performance, and interface design in research-heavy systems</li>
+<li>how to work with researchers by turning abstract or mathematically dense ideas into dependable code</li>
+</ul>
+<p>Nowadays, I am diving back into C++.</p>  </article>  </main> <footer class="site-footer"> <hr> <p>Quietly built with Astro and MDX.</p> </footer> </div> </body></html>

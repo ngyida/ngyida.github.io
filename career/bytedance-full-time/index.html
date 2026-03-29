@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Worked on distributed authorization systems"><meta name="robots" content="noindex, nofollow, nosnippet, max-snippet:0, max-image-preview:none"><meta name="googlebot" content="noindex, nofollow, nosnippet, max-snippet:0, max-image-preview:none"><title>SWE (full-time) at ByteDance | Yi Da</title><link rel="stylesheet" href="/_astro/SiteLayout.BpfUoBIV.css"></head> <body> <div class="site-frame"> <header class="masthead"> <a class="brand" href="/">Ng Yi Da</a> <nav class="site-nav" aria-label="Primary"> <a href="/"> about </a> <span class="nav-separator">/</span><a href="/career/" aria-current="page" class="active"> career </a> <span class="nav-separator">/</span><a href="/projects/"> projects </a> <span class="nav-separator">/</span><a href="/contact/"> contact </a>  </nav> </header> <hr> <main class="site-main">  <article class="prose-page"> <p class="back-link"> <a href="/career/">back to career</a> </p> <h1> SWE (full-time) at <a class="entry-title-company" href="https://www.bytedance.com/en/" target="_blank" rel="noreferrer"> ByteDance </a> </h1> <p class="entry-meta">July 2025 - Present</p> <p class="page-intro">Worked on distributed authorization systems</p>  <hr>  <h2 id="context">Context</h2>
+<p>This was my first full-time role out of university</p>
+<p>My team builds a distributed authorization platform that spans close to a hundred regions.
+It serves major <a href="https://www.bytedance.com/en/">ByteDance</a> product lines such as <a href="https://www.tiktok.com/">TikTok</a>, <a href="https://www.volcengine.com/">Volcano Engine</a>, and <a href="https://seed.bytedance.com/en/">SEED</a>.</p>
+<p>It dropped me straight into a problem space that I enjoy a lot:
+a system with large scale, real constraints, and very little room for hand-wavy performance.
+Afterall, authorization sits critically on every execution path.</p>
+<h2 id="my-work">My work</h2>
+<p>I worked on a bunch of things, but these were probably my three favorite projects, each with a different flavor of systems problem.</p>
+<h3 id="1-engineered-a-new-powerful-abac-model">1. Engineered a new powerful ABAC model</h3>
+<ul>
+<li>designed and integrated a new ABAC model alongside the existing RBAC and PBAC models</li>
+<li>unlocked a new dimension of the system’s expressiveness and brought in customers which the older models couldn’t support</li>
+</ul>
+<p>I liked this one because it was not just about adding a feature.
+It was about extending the core system in a way that stayed compatible, which is usually the harder part.
+This scales easily with new customers, and new features become by-products of the new model.</p>
+<h3 id="2-led-an-initiative-to-improve-authorization-explainability">2. Led an initiative to improve authorization explainability</h3>
+<p>I introduced two new approaches to make authorization decisions easier to understand:</p>
+<ul>
+<li>visibility into full authorization graphs, useful for debugging and root cause analysis</li>
+<li>reverse-abstraction so customers could reason about authorization using their own business concepts</li>
+</ul>
+<p>My initivatives turned into actual tools that enhanced the customers’ understanding of our system.
+More importantly, customers are empowered to self-help and incident debugging are minimized for the team.</p>
+<h3 id="3-built-a-high-performance-low-latency-authorization-sdk">3. Built a high-performance, low-latency authorization SDK</h3>
+<ul>
+<li>removed network I/O from the critical path by serving authorization locally</li>
+<li>tackled high memory usage with techniques such as data compression and data structures like roaring bitmaps</li>
+<li>built the surrounding architecture for a hybrid push-pull caching mechanism</li>
+<li>achieved an average latency of 0.08ms on authorization checks</li>
+</ul>
+<p>This one was satisfying because it had the technical full package:
+latency constraints, memory tradeoffs, caching design, and the kind of engineering work where every decision leaks into another one.</p>
+<h2 id="my-takeaways">My takeaways</h2>
+<p>This role pushed me to think about problem-solving as something much broader than implementation.</p>
+<p>Technical competency still matters a lot, obviously. But the more interesting part of engineering is usually earlier: identifying the actual problem, understanding the constraints properly, exploring different ways to attack it, and only then committing to a solution.</p>
+<p>I think this role also made me appreciate that impact often comes from choosing the right problem to solve, not just solving a chosen problem quickly.</p>
+<p>For now, I am mostly just excited to keep showing up, finding sharper problems, and solving them as cleanly as I can.</p>  </article>  </main> <footer class="site-footer"> <hr> <p>Quietly built with Astro and MDX.</p> </footer> </div> </body></html>
