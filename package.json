@@ -13,7 +13,7 @@
     "build": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro build",
     "preview": "cross-env ASTRO_TELEMETRY_DISABLED=1 astro preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist --nojekyll"
   },
   "devDependencies": {
     "cross-env": "^10.1.0",
